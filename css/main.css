@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.game{
+    height: 100vh;
+    background-color: rgb(39, 41, 68);
+    color: rgb(224, 224, 224);
+    width: auto;
+}
+
+.score{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.score > h2{
+    font-size: 1rem;
+}
+
+.pScoreCount,
+.cScoreCount{
+    font-size: 1.96rem;
+    padding: 1rem;
+    color: rgb(224, 224, 224);
+}
+
+.score-label{
+    font-size: 1.966rem;
+    color: #5372F0;
+}
+
+.intro{
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity .8s ease;
+}
+
+.intro-label{
+    font-size: 2.3rem;
+}
+
+.intro-btn,
+.options > button{
+    border: none;
+    background: none;
+    color: rgb(224, 224, 224);
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: rgb(45,117,96);
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: .5rem;
+    transition: background-color .5s ease;
+    box-shadow: 0 20px 50px rgba(146, 178, 169, .19);
+}
+
+.intro-btn:hover,
+.options > button:hover{
+    background-color: rgba(17, 208, 151, 0.597);
+}
+
+.match{
+    position: absolute;
+    height: 6vh;
+    left: 50%;
+    top: 50%;
+    transition: opacity .95s ease;
+    transform: translate(-50%, -50%);
+}
+
+.match > h1{
+    text-align: center;
+    color: red;
+}
+
+.hands{
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hands > span{
+    font-size: 3rem;
+}
+
+.player-hand{
+    transform: rotateY(180deg);
+    color: rgb(196, 9, 9);
+}
+
+.computer-hand{
+    color: #5372F0;
+}
+
+div.fadeOut{
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadeIn{
+    opacity: 1;
+    pointer-events: all;
+}
